@@ -1,0 +1,579 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./assets/js/popper.min.js"></script>
+    <script defer src="./assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script> document.addEventListener("DOMContentLoaded", () => { document.querySelectorAll("img[src]").forEach(image => { const altText = generateAltText(image.getAttribute("src")); image.alt = altText; }); }); function generateAltText(src) { return src.split('/').pop().split('.')[0].replace(/[-\/_*]/g, ' '); } </script>
+
+    <title></title>
+<meta property="og:title" content="" />
+<meta property="og:locale" content="fr_FR" />
+<meta name="description" content="" />
+<meta property="og:description" content="" />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://localhost:4000/verandas" />
+<meta property="og:url" content="http://localhost:4000/verandas" />
+<meta property="og:site_name" content="BHInternet" />
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"url":"http://localhost:4000/verandas",
+"description":"",
+"name":""
+}
+</script>
+
+</head>
+  <body>
+    <section class="Navbar navbar-main fixedNav">
+    <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
+        <div class="container-fluid">
+            <div class="Navbar_image">
+                <a href="./index.html" class="link" title="Accueil"><img src="./assets/img/logo.png" alt=""
+                        class="Navbar_image-img"></a>
+            </div>
+            <button class="navbar-toggler Navbar_toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars toggle-button Navbar_toggler-icon" aria-hidden="true"></i>
+            </button>
+            <div class="collapse navbar-collapse Navbar_nav-collapse" id="navbarNav">
+                <ul class="navbar-nav Navbar_nav ml-auto">
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-link" title="Accueil" href="./index.html"> Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-link dropdown-toggle text-white" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            VERANDAS
+                        </a>
+                        <div class="dropdown-menu bg-black mt-2" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item Navbar_nav-link py-2" title="verandas"
+                                href="./verandas.html">Verandas</a>
+                                <a class="dropdown-item Navbar_nav-link py-2" href="./fenetres.html" title="fenetres">Fenetres</a>
+                            <a class="dropdown-item Navbar_nav-link py-2" title="fenetres-en-pvc"
+                                href="./fenetres-en-pvc.html">Fenetres en pvc</a>
+                            <a class="dropdown-item Navbar_nav-link py-2" title="fenetres-aluminium" href="./fenetres-aluminium.html">Fenetres Aluminium</a>
+                        </div>
+                    </li>
+                    <li class="nav-item Navbar_nav-item ">
+                        <a class="nav-link Navbar_nav-link" title="PERGOLAS BIOCLIMATIQUE"
+                            href="./pergola.html">
+                            PERGOLAS BIOCLIMATIQUE</a>
+                    </li>
+                    <li class="nav-item dropdown Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-link dropdown-toggle text-white" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            FERMETURES ET MENUISERIES
+                        </a>
+                        <div class="dropdown-menu bg-black mt-2" aria-labelledby="dropdownMenuButton">
+
+                        </div>
+                    </li>
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-link" title="MAÇONNERIE" href="">
+                            MAÇONNERIE </a>
+                    </li>
+                    <li class="nav-item Navbar_nav-item">
+                        <a class="nav-link Navbar_nav-link" title="contact" href="./contact.html">
+                            CONTACT</a>
+                    </li>
+                </ul>
+                <div class="ml-auto d-flex align-items-center justify-content-end">
+                    <a href="https://facebook.com/" target="_blank" class=" Navbar_nav-button">
+                        DEMANDE DE DEVIS
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" class=" Navbar_nav-button">
+                        SHOWROOM
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</section>
+
+    
+
+    <div class="">
+        <section class="banner-1">
+    <div class="container">
+        <div class="banner_content slider_content-inner">
+            <div class="slider_content-image">
+                <img src="./assets/img/logo.png" alt="" class="slider_content-image--img">
+            </div>
+            <h1 class="slider_content-title">Les Vérandas</h1>
+            <div class="banner_buttons">
+                <div class="banner_buttons-btn"><a href="./contact.html" class="menu_content-link">Vérandas
+                        Aluminium</a></div>
+                <div class="banner_buttons-btn"><a href="./contact.html" class="menu_content-link">Vérandas
+                        Bois</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu section bg-prim">
+    <div class="menu_bg">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="menu_content2 mt-5">
+                        <h2 class="menu_content-title">Un agrandissement de maison<br>
+                            aux dimensions XXL</h2>
+                        <hr class="menu_content-divider2">
+                        <p class="menu_content-p">
+                            Les profils de la structure en aluminium EQUINOXE permettant d’obtenir de plus grandes
+                            dimensions. Pour plus de profondeur et d’espace dans votre nouvelle pièce à vivre, Espace
+                            Lounge® a développé la poutre TITAN. Ce profilé aluminium exclusif permet une portée libre
+                            XXL allant jusqu’à 6000mm sans poteau intermédiaire.
+                            <br><br>
+                            Voyez plus grand et offrez-vous une vue panoramique sur votre jardin, sans limite.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a href="./contact.html" class="menu_content-link">NOUS CONTACTER</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="container">
+                        <div class="menu_image">
+                            <img src="./assets/img/v1.jpeg" alt="" class="menu_image-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu section">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <div class="container">
+                    <div class="menu_image">
+                        <img src="./assets/img/v2.jpeg" alt="" class="menu_image-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-md-6">
+                <div class="menu_content2 mt-5">
+                    <h2 class="menu_content-title color-sec">Des volets roulants intégrés pour une<br>
+                        véranda moderne et design<br>
+                        aux dimensions XXL</h2>
+                    <hr class="menu_content-divider2 color-sec bg-sec">
+                    <p class="menu_content-p color-sec">
+                        EQUINOXE intègre avec élégance, un coffre de volets roulants à sa structure de véranda
+                        aluminium.
+                        <br><br>
+                        Grâce à des fixations invisibles et une intégration en toute discrétion, votre extension
+                        d’habitation à toiture plate conserve ses lignes épurées et son design contemporain.
+                    </p>
+                    <div class="d-flex justify-content-center">
+                        <a href="./contact.html" class="menu_content-link color-sec">DEMANDE DE DEVIS </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="stripe">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <div class="stripe_content mt-5">
+                    <h2 class="menu_content-title">Un confort de vie renforcé dans votre espace de vie</h2>
+                    <hr class="menu_content-divider2">
+                    <p class="menu_content-p">
+                        Que ce soit pour une meilleure isolation, une occultation solaire ou simplement par sécurité,
+                        l’intégration de volets roulants vous offre une extension de maison au confort renforcé. Les
+                        dimensions du coffre de 180x180mm vous permettent d’accueillir des volets roulants classiques ou
+                        des Brise-Soleil Orientables (BSO). Equipé d’une télécommande, adaptez simplement l’ouverture
+                        souhaitée de vos stores ou volets depuis votre canapé. Entre ombre et lumière, modulez votre
+                        apport de lumière en fonction de vos envies. En position fermée, les volets roulants vous offre
+                        sécurité et intimité dans votre nouvelle pièce à vivre.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu section">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-lg-1"></div>
+            <div class="col-md-6">
+                <div class="menu_content2 mt-5">
+                    <h2 class="menu_content-title color-sec">Le design d’une extension à toit plat
+                        pour une maison moderne</h2>
+                    <hr class="menu_content-divider2 color-sec bg-sec">
+                    <p class="menu_content-p color-sec">
+                        L’extension d’habitation à toit plat ZENITH permet un agrandissement de votre maison tout en
+                        respectant l’architecture déjà existante.
+                        <br><br>Le design intemporel du toit terrasse s’adapte parfaitement à tous les types d’habitat
+                        quel que soit son style, son origine et sa région. La structure sobre et tendance de cette
+                        véranda contemporaine assure une allure moderne et élégante à votre habitation. Spacieuse avec
+                        de plus grands volumes intérieurs, l’extension de maison à toit plat ZENITH augmente vos
+                        possibilités d'agencement et garantit une utilisation optimale de votre nouvelle pièce à vivre.
+
+                        Les panneaux composites autoportants de 167mm d’épaisseur combinent isolation, finition
+                        intérieure et résistance mécanique.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="container">
+                    <div class="menu_image">
+                        <img src="./assets/img/v3.jpeg" alt="" class="menu_image-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu section bg-prim clip-1 p-7">
+    <div class="menu_bg">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="menu_content2 mt-5">
+                        <h2 class="menu_content-title">Votre nouvel espace de vie, au confort thermique exceptionnel
+                        </h2>
+                        <hr class="menu_content-divider2">
+                        <p class="menu_content-p">
+                            L’isolation de la toiture de votre extension d’habitation est un point essentiel pour
+                            transformer votre véranda en une pièce agréable et confortable à vivre. <br>
+                            La toiture de ZENITH est composée de panneaux composites de 167mm d’épaisseur à très haute
+                            isolation thermique pour une toiture 4 fois plus isolante qu’un toit classique de véranda.
+                            Hyper isolante, l’extension d’habitation ZENITH vous protège efficacement des rayons du
+                            soleil et préserve la fraîcheur dans votre intérieur, l’été. L’hiver, les panneaux
+                            composites isolants permettent de conserver la chaleur accumulée dans votre nouvel espace de
+                            vie et de la redistribuer dans les pièces attenantes
+                            <br><br>
+                            Fini les vérandas serre ou glacière mal isolées. Espace Lounge® transforme votre véranda en
+                            une cuisine, un salon ou une salle à manger agréable à vivre en toutes saisons.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a href="./contact.html" class="menu_content-link">NOUS CONTACTER</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="container">
+                        <div class="menu_image">
+                            <img src="./assets/img/v4.jpeg" alt="" class="menu_image-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu section">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <div class="menu_image">
+                    <img src="./assets/img/v5.jpeg" alt="" class="menu_image-img h-420">
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-md-6">
+                <div class="menu_content2 mt-5">
+                    <h2 class="menu_content-title color-sec">L’assurance d’une véranda<br>
+                        au système breveté et éprouvé</h2>
+                    <hr class="menu_content-divider2 color-sec bg-sec">
+                    <p class="menu_content-p color-sec">
+                        L’extension de maison ZENITH intègre le seul système d’étanchéité breveté pour véranda à toiture
+                        plate. Un drain de sécurité incliné et une triple barrière étanche sont intégrés directement
+                        dans les panneaux qui composent la toiture. Ce système breveté permet de conserver une pente
+                        naturelle de seulement 1% et de proposer la seule véritable toiture à plat pour extensions
+                        d’habitations du marché. Cette technologie éprouvée avec plus de 850 réalisations en France et
+                        en Europe, est développée pour vous garantir sécurité et confort en toutes saisons.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu section bg-prim clip-1 p-7">
+    <div class="menu_bg">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="menu_content2 mt-5">
+                        <h2 class="menu_content-title">Une extension de lumière
+                            pour votre maison
+                        </h2>
+                        <hr class="menu_content-divider2">
+                        <p class="menu_content-p">
+                            Les vérandas contemporaines à toit plat Espace Lounge® permettent d’obtenir de plus hautes
+                            surfaces vitrées latérales. Vous pouvez maintenant profiter d’une vue panoramique sur votre
+                            jardin ou votre piscine. En complément, la toiture à plat ZENITH peut accueillir un puits de
+                            lumière XXL, illuminant votre intérieur d’un agréable éclairage naturel.
+                            <br><br>
+                            A la nuit tombée, la large trame de toiture vitrée vous offre une vue éblouissante sur le
+                            ciel étoilé.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a href="./contact.html" class="menu_content-link">NOUS CONTACTER</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="container">
+                        <div class="menu_image">
+                            <img src="./assets/img/v6.jpeg" alt="" class="menu_image-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="card section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="card_content">
+                    <div class="card_content-image">
+                        <img src="./assets/img/card1.jpeg" alt="" class="card_content-image--img">
+                    </div>
+                    <div class="menu_content2 px-4">
+                        <h3 class="menu_content-title color-sec">Une véranda contemporaine
+                            sur-mesure à votre image</h3>
+                        <hr class="menu_content-divider2 color-sec bg-sec">
+                        <p class="menu_content-p color-sec mt-0">
+                            Il est possible de personnaliser l’agrandissement de votre maison en fonction de
+                            l’utilisation que vous souhaitez en faire et de son orientation. Pour s’adapter parfaitement
+                            à vos envies, aux dimensions et à la configuration de votre maison, l’installateur agréé le
+                            plus proche de chez vous accompagne et vous conseille tout au long de l’élaboration de votre
+                            projet. Vous pouvez par exemple sélectionner une teinte en harmonie avec votre maison et son
+                            environnement parmi une palette de plus de 800 teintes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card_content">
+                    <div class="card_content-image">
+                        <img src="./assets/img/card2.jpeg" alt="" class="card_content-image--img">
+                    </div>
+                    <div class="menu_content2 px-4">
+                        <h3 class="menu_content-title color-sec">Une structure en aluminium
+                            design et élégante</h3>
+                        <hr class="menu_content-divider2 color-sec bg-sec">
+                        <p class="menu_content-p color-sec mt-0">
+                            Le design minimaliste et épuré de la véritable véranda à toit plat Espace Lounge® s’adapte à
+                            tous les types d’habitat quel que soit son style ou sa région. Elégante et moderne, le
+                            modèle Céleste s’intègre parfaitement à l’architecture de votre maison.<br>
+                            Fabriquée à partir d’un aluminium de qualité, l’extension Espace Lounge propose une haute
+                            qualité de finition.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6">
+                <div class="card_content">
+                    <div class="card_content-image">
+                        <img src="./assets/img/card3.jpeg" alt="" class="card_content-image--img">
+                    </div>
+                    <div class="menu_content2 px-4">
+                        <h3 class="menu_content-title color-sec">Une véranda
+                            au confort optimal</h3>
+                        <hr class="menu_content-divider2 color-sec bg-sec">
+                        <p class="menu_content-p color-sec mt-5 pt-4">
+                            L’isolation du toit est une priorité pour votre confort. La toiture de Céleste est jusqu’à
+                            4x plus isolante qu’une véranda traditionnelle. Sa toiture est équipée d’un noyau isolant
+                            performant de 130 mm d’épaisseur pour vous offrir un confort thermique en toutes saisons.
+                            Conserver la fraîcheur de votre intérieur en été et préserver la chaleur de votre pièce en
+                            hiver.<br>
+                            Afin de vous garantir une utilisation optimale de votre nouvel espace, Espace Lounge intègre
+                            un filtre acoustique à sa toiture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="menu section bg-prim clip-1 p-7">
+    <div class="menu_bg">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="menu_content2 mt-5">
+                        <h2 class="menu_content-title">Une extension de lumière
+                        </h2>
+                        <hr class="menu_content-divider2">
+                        <p class="menu_content-p">
+                            Profitez pleinement de la luminosité naturelle dans votre nouvel espace grâce au puit de
+                            lumière intégré ASTRAL. La lumière zénithale permet de diffuser la luminosité naturelle de
+                            façon homogène dans la pièce. Avec de plus grandes baies vitrées, la véranda à toit plat
+                            Céleste vous permet de profiter pleinement de la vue sur votre jardin tout en conservant
+                            votre confort intérieur.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a href="./contact.html" class="menu_content-link">NOUS CONTACTER</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="container">
+                        <div class="menu_image">
+                            <img src="./assets/img/v7.jpeg" alt="" class="menu_image-img h-420">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="menu section">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <div class="menu_image">
+                    <img src="./assets/img/v8.jpeg" alt="" class="menu_image-img h-420">
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-md-6">
+                <div class="menu_content2 mt-5">
+                    <h2 class="menu_content-title color-sec">Un système breveté et sécurisé</h2>
+                    <hr class="menu_content-divider2 color-sec bg-sec">
+                    <p class="menu_content-p color-sec">
+                        Le modèle Céleste garantit une sécurité optimale grâce à son système unique d’étanchéité breveté
+                        intégré dans l’âme du panneau : Water Drive System®.
+                        <br><br>
+                        Cette technologie que l’on peut retrouver sur plus de 2000 réalisations dans toute la France est
+                        développée pour vous garantir sécurité et confort en toutes saisons. Profitez d’un nouvel espace
+                        en toute sérénité avec une véranda à toiture plate au système éprouvé.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+
+    <footer class="footer section">
+    <div class="container-fluid">
+        <div class="row w-100 justify-content-between">
+            <div class="col-md-4 col-sm-6">
+                <div class="footer_logo">
+                    <a href="./index.html" class="link" title="Accueil"><img src="./assets/img/logo.png" alt=""
+                        class="footer_logo-img"></a>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="footer_content">
+                    <h3 class="footer_content-title mt-0">Véranda Essonne</h3>
+                    <div class="footer_logos">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 px-0 mx-0">
+                                <div class="footer_logo-image">
+                                    <img src="./assets/img/p1.png" alt="" class="footer_logo-image--img">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 px-0 mx-0">
+                                <div class="footer_logo-image">
+                                    <img src="./assets/img/p2.png" alt="" class="footer_logo-image--img">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 px-0 mx-0">
+                                <div class="footer_logo-image">
+                                    <img src="./assets/img/p3.png" alt="" class="footer_logo-image--img">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 px-0 mx-0">
+                                <div class="footer_logo-image">
+                                    <img src="./assets/img/p4.png" alt="" class="footer_logo-image--img">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 px-0 mx-0">
+                                <div class="footer_logo-image">
+                                    <img src="./assets/img/p5.png" alt="" class="footer_logo-image--img">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 px-0 mx-0">
+                                <div class="footer_logo-image">
+                                    <img src="./assets/img/p6.png" alt="" class="footer_logo-image--img">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 px-0 mx-0">
+                                <div class="footer_logo-image">
+                                    <img src="./assets/img/p7.png" alt="" class="footer_logo-image--img">
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 px-0 mx-0">
+                                <div class="footer_logo-image">
+                                    <img src="./assets/img/p8.png" alt="" class="footer_logo-image--img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 col-sm-6 justify-content-end ml-auto">
+                <div class="footer_content">
+                    <a href="tel:01 60 75 10 85" class="footer_content-link d-flex"><i class="fas fa-phone-alt"></i> &nbsp;&nbsp; 01 60 75 10 85</a>
+                    <p class="footer_content-p d-flex"> <i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; 47, Quai  Maurice Riquiez 91100 Corbeil-Essonnes</p>
+                    <h3 class="footer_content-title m-l-1">Suivez-nous :</h3>
+                    <a href="https://www.instagram.com/" class="footer_content-link"><i class="fab fa-instagram"></i> &nbsp; Cfv 91 Corbeil</a>
+                    <a href="https://www.facebook.com/" class="footer_content-link"><i class="fab fa-facebook"></i> &nbsp; Cfv.91</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <center>
+            <a href="./mentionsLegales.html"
+                class="footer_links-ul--link text-white hover text-center w-100 d-inline">Mentions légales - </a>
+            <a href="https://www.bhinternet.fr/" target="_blank"
+                class="footer_links-ul--link text-white hover text-center w-100 d-inline"
+                href="https://www.bhinternet.fr/"> Bh Internet-tous droits réservés 2023</a>
+        </center>
+    </div>
+</footer>
+
+<script src="./assets/js/index.js"></script>
+<!-- <script src="./assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+  </body>
+</html>
