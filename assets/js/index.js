@@ -17,7 +17,7 @@ $(document).ready(function () {
       autoplayTimeout: 5000,
       autoplayHoverPause: false,
       dots: false,
-      margin: 20,
+      margin: 0,
       smartSpeed: 450,
       // animateIn: "fadeIn",
       // animateOut: "fadeOut",
@@ -75,17 +75,21 @@ $(document).ready(function () {
     var owl = $(".owl2");
     owl.owlCarousel({
       items: 3,
-      navigation: false,
+      navigation: true,
       loop: true,
       rewind: true,
       autoplay: false,
       autoplayTimeout: 5000,
       autoplayHoverPause: false,
-      dots: true,
+      dots: false,
       margin: 10,
       smartSpeed: 450,
       // animateIn: "fadeIn",
       // animateOut: "fadeOut",
+      navText: [
+        "<i class='fas fa-chevron-left nav-left'></i>",
+        "<i class='fas fa-chevron-right nav-right'></i>",
+      ],
       responsiveClass: true,
       responsive: {
         200: {
@@ -130,6 +134,34 @@ $(document).ready(function () {
       owl.trigger("stop.owl.autoplay");
     });
   });
+
+
+  // $(document).ready(function () {
+  //   // Function to handle hover events for dropdowns
+  //   function handleHover() {
+  //     $('.hover-dropdown').hover(
+  //       function () {
+  //         $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(300);
+  //       },
+  //       function () {
+  //         $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(300);
+  //       }
+  //     );
+  //   }
+
+  //   // Initial setup
+  //   handleHover();
+
+  //   // Re-run the setup when the window is resized
+  //   $(window).resize(function () {
+  //     if ($(window).width() >= 768) {
+  //       handleHover();
+  //     } else {
+  //       // Remove the hover effect for small screens
+  //       $('.hover-dropdown').off('mouseenter mouseleave');
+  //     }
+  //   });
+  // });
 
 
   $(function(){
@@ -240,3 +272,4 @@ function fixNav() {
     return false;
   });
 })(jQuery)
+
