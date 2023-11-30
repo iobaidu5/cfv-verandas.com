@@ -203,37 +203,48 @@ lightBoxContent.appendChild(lightBoxNext);
 
 document.body.appendChild(lightBoxContainer);
 
-let index = 1;
+let currentIndex = 0;
 
-function showLightBox(n) {
-    if (n > galleryItem.length) {
-        index = 1;
-    } else if (n < 1) {
-        index = galleryItem.length;
+function showLightBox(index) {
+  Array.from(galleryItem).forEach(item => {
+    let imageIndex = item.getAttribute("data-index");
+    if (parseInt(imageIndex) === index) {
+      let imageLocation = item.children[0].getAttribute("src");
+      lightBoxImg.setAttribute("src", imageLocation);
     }
-    let imageLocation = galleryItem[index-1].children[0].getAttribute("src");
-    lightBoxImg.setAttribute("src", imageLocation);
+  });
 }
 
 function currentImage() {
-    lightBoxContainer.style.display = "block";
+  lightBoxContainer.style.display = "block";
 
-    let imageIndex = parseInt(this.getAttribute("data-index"));
-    showLightBox(index = imageIndex);
+  let imageIndex = parseInt(this.getAttribute("data-index"));
+  currentIndex = imageIndex;
+  showLightBox(currentIndex);
 }
+
 for (let i = 0; i < galleryItem.length; i++) {
     galleryItem[i].addEventListener("click", currentImage);
 }
 
 function slideImage(n) {
-    showLightBox(index += n);
+    currentIndex += n;
+    if (currentIndex >= galleryItem.length) {
+        currentIndex = 0;
+    } else if (currentIndex < 0) {
+        currentIndex = galleryItem.length - 1;
+    }
+    showLightBox(currentIndex);
 }
+
 function prevImage() {
     slideImage(-1);
 }
+
 function nextImage() {
     slideImage(1);
 }
+
 lightBoxPrev.addEventListener("click", prevImage);
 lightBoxNext.addEventListener("click", nextImage);
 
@@ -242,7 +253,9 @@ function closeLightBox() {
         lightBoxContainer.style.display = "none";
     }
 }
+
 lightBoxContainer.addEventListener("click", closeLightBox);
+
 
 
 const nav = document.querySelector(".Navbar");
